@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: NODE_ENV == "development" ? "http://localhost:5173" : FRONTEND_URL ,
+    origin: "https://chat-box-client-one.vercel.app",
     credentials: true,
   })
 );
