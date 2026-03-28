@@ -24,6 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
+    methods: ["GET","POST","PUT","DELETE","OPTIONS"],
     origin: "https://chat-box-client-one.vercel.app",
     credentials: true,
   })
